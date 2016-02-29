@@ -1,0 +1,29 @@
+{
+    "name": "gulp-filetree-json-easy",
+    "version": "0.0.1",
+    "description": "Fetching all given resources and bring it back as a easy to handle json",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ergowerk/gulp-filetree-json-easy.git"
+    },
+    "keywords": [
+        "gulp",
+        "gulpplugin",
+        "image",
+        "json"
+    ],
+    "author": "info@ergowerk.de",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ergowerk/gulp-filetree-json-easy/issues"
+    },
+    "homepage": "https://github.com/ergowerk/gulp-filetree-json-easy",
+    "dependencies": {
+        "gulp-util": "~3.0.1",
+        "lodash": "^4.0.0",
+        "through2": "~0.6.3"
+    },
+    "devDependencies": {
+    }
+}
