@@ -36,6 +36,39 @@ Default value: false
 
 Should we save the json in a hierarchical way or in a flat way only as array
 
+## Example [AngularJS](https://github.com/angular/angular.js)
+
+If you want to have an image preloader within an angularjs app, there is little help needed:
+https://github.com/dabit3/angular-easy-image-preloader
+
+#### Example code
+
+```javascript
+app.factory('Image', function ($http) {
+  // create a request
+  var Request = $http({
+    method: 'GET',
+    url: 'app/data/images.json'
+  });
+
+  return Request;
+});
+
+app.controller('MyController', function(preloader, Image) {
+  Image.then(function (Request) {
+      if (parseInt(Request['status']) === 200) {
+          var arrayImageLocations = Request['data'];
+          //start our preloader and load every image
+          preloader
+            .preloadImages(arrayImageLocations)
+            .then(function () {
+                // show your website
+            });
+      }
+  });
+});
+```
+
 ## License :MIT
 
 Copyright (c) 2016 ERGOWERK Usability Engineering UG
