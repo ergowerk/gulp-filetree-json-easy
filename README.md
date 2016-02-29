@@ -38,7 +38,7 @@ Should we save the json in a hierarchical way or in a flat way only as array
 
 ## Example [AngularJS](https://github.com/angular/angular.js)
 
-If you want to have an image preloader within an angularjs app, there is little help needed:
+If you want to have an image preloader within an AngularJS app, there is little help needed:
 https://github.com/dabit3/angular-easy-image-preloader
 
 #### Example code
